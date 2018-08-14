@@ -6,6 +6,8 @@ import store from './store'
 Vue.config.productionTip = false
 
 import 'normalize.css';
+import './plugins/element.js'
+import './assets/scss/element/set.scss'
 
 new Vue({
   router,

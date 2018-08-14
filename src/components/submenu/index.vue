@@ -1,5 +1,5 @@
 <template>
-  <li class="submenu-wrap menu-item">
+  <li class="submenu-wrap c-menu-item">
     <div class="submenu__title" @click="onSubMenuTitleHandle"
     :class="{'s-active': isMenuTitleHandle}">
       <slot name="title"></slot>

@@ -34,15 +34,15 @@ export default {
       type: [String, Number]
     },
     /** 展开的 Submenu 的 `index` 集合 */
-    // openIndexs: {
-    //   type: Array,
-    //   default: []
-    // },
-    // /** 是否开启手风琴效果 */
-    // accordion: {
-    //     type: Boolean,
-    //     default: false
-    // },
+    openIndexs: {
+      type: Array,
+      default: []
+    },
+    /** 是否开启手风琴效果 */
+    accordion: {
+        type: Boolean,
+        default: false
+    },
   },
   data() {
     return {
@@ -269,12 +269,12 @@ export default {
   }
 }
 
-// ul,
-// li {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-// }
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .login,
 .no-login {
