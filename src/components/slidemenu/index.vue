@@ -1,5 +1,5 @@
 <template>
-  <div class="c-sidemenu" :class="{active:isOpen}">
+  <div class="c-sidemenu" :class="{active:isShow}">
     <div class="bg-wrap" @click="onMaskHandle"></div>
     <div class="con-wrap">
       <header>
@@ -46,7 +46,6 @@ export default {
   },
   data() {
     return {
-      isOpen: true
     };
   },
   computed: {
@@ -62,15 +61,9 @@ export default {
       } else {
         document.getElementsByTagName('body')[0].style.overflow = 'auto';
       }
-      this.isOpen = this.isShow;
     }
   },
   mounted() {
-    // this.$on('item-click', this.onItemClick);
-    // this.$root.$on('item-click', this.onItemClick);
-    this.$on('submenu-click', this.onSubMenuClick);
-    this.$on('select', this.onMenuItemClick);
-    eventHub.$on('item-click', this.onItemClick);
   },
   methods: {
     onMaskHandle() {
@@ -85,21 +78,7 @@ export default {
     },
     onMenuItemClick() {
       console.log('菜单点击');
-    },
-    initOpenedMenu() {
-      const index = this.activeIndex;
-      const activeItem = this.items[index];
-      if (!activeItem || this.mode === 'horizontal' || this.collapse) return;
-
-      let indexPath = activeItem.indexPath;
-
-      // 展开该菜单项的路径上所有子菜单
-      // expand all submenus of the menu item
-      indexPath.forEach(index => {
-        let submenu = this.submenus[index];
-        submenu && this.openMenu(index, submenu.indexPath);
-      });
-    },
+    }
   },
   components: {
     // slideMenu

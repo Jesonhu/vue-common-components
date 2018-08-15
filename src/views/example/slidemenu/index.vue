@@ -1,6 +1,13 @@
 <template>
   <div class="p-slidemenu">
-    <button @click="onBtnHandle">操作</button>
+    <!-- <button @click="onBtnHandle">操作</button> -->
+    <v-header title="slideMenu" 
+    @clickRight="onBtnHandle">
+      <template slot="right">
+        <i class="iconfont icon-category"></i>
+      </template>
+    </v-header>
+
     <div class="con-wrap" style="width:100%;height:1000px;background-color:green;"></div>
     <div class="con-wrap" style="width:100%;height:1000px;background-color:yellow;"></div>
 
@@ -129,8 +136,7 @@
 
 <script type="text/ecmascript-6">
 import slideMenu from "@/components/slidemenu/index";
-import menuItem from "@/components/menu_item/index";
-import subMenuItem from "@/components/submenu/index";
+import header from '@/components/header/index'
 import mockData from "@/utils/mockData.json";
 
 import { mapState } from "vuex";
@@ -139,7 +145,7 @@ export default {
   name: "p-slideMenu",
   data() {
     return {
-      isShowSlideMenu: true,
+      isShowSlideMenu: false,
       sideMenuList: mockData.sideMenu,
       activeIndex: '1',
       activeIndex2: '1'
@@ -194,8 +200,7 @@ export default {
   mounted() {},
   components: {
     slideMenu,
-    menuItem,
-    subMenuItem
+    vHeader: header
   }
 };
 </script>

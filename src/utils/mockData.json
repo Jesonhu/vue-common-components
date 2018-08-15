@@ -4,10 +4,10 @@
       "path": "/home"
     },
     {
-      "name": "亚展国际",
+      "name": "菜单1",
       "path": "",
       "children": [{
-          "name": "亚展国际2-1",
+          "name": "菜单2-1",
           "path": "/yzgj/1"
         },
         {
@@ -19,63 +19,63 @@
           "path": "/yzgj/js"
         },
         {
-          "name": "亚展荣誉2-4",
+          "name": "荣誉2-4",
           "path": "/yzgj/ry"
         }
       ]
     },
     {
-      "name": "亚展业绩",
+      "name": "菜单2",
       "path": "",
       "children": [
         {
-          "name": "亚展业绩子1",
+          "name": "菜单2子1",
           "path": ""
         },
         {
-          "name": "亚展业绩子2",
+          "name": "菜单2子2",
           "path": ""
         }
       ]
     },
     {
-      "name": "亚展新闻",
+      "name": "新闻",
       "path": "",
       "children": [
         {
-          "name": "亚展新闻子1",
+          "name": "新闻子1",
           "path": ""
         },
         {
-          "name": "亚展新闻子2",
+          "name": "新闻子2",
           "path": ""
         }
       ]
     },
     {
-      "name": "亚展研究",
+      "name": "研究",
       "path": "",
       "children": [
         {
-          "name": "亚展研究子1",
+          "name": "研究子1",
           "path": ""
         },
         {
-          "name": "亚展研究子2",
+          "name": "研究子2",
           "path": ""
         }
       ]
     },
     {
-      "name": "亚展文化",
+      "name": "文化",
       "path": "",
       "children": [
         {
-          "name": "亚展文化子1",
+          "name": "文化子1",
           "path": ""
         },
         {
-          "name": "亚展文化子2",
+          "name": "文化子2",
           "path": ""
         }
       ]

@@ -23,6 +23,21 @@ export default new Router({
           path: 'slidemenu',
           name: 'slidemenu',
           component: () => import('@/views/example/slidemenu/index.vue')
+        },
+        {
+          path: 'header',
+          name: 'header',
+          component: () => import('@/views/example/header/index.vue')
+        },
+        {
+          path: 'gridmenu',
+          name: 'gridmenu',
+          component: () => import('@/views/example/gridMenu/index.vue')
+        },
+        {
+          path: 'swiper',
+          name: 'swiper',
+          component: () => import('@/views/example/vueAwesomeSwiper/index.vue')
         }
       ]
     },
