@@ -1,0 +1,128 @@
+{
+  "sideMenu": [{
+      "name": "首页",
+      "path": "/home"
+    },
+    {
+      "name": "菜单1",
+      "path": "",
+      "children": [{
+          "name": "菜单2-1",
+          "path": "/yzgj/1"
+        },
+        {
+          "name": "操盘优势2-2",
+          "path": "/yzgj/ys"
+        },
+        {
+          "name": "团队介绍2-3",
+          "path": "/yzgj/js"
+        },
+        {
+          "name": "荣誉2-4",
+          "path": "/yzgj/ry"
+        }
+      ]
+    },
+    {
+      "name": "菜单2",
+      "path": "",
+      "children": [
+        {
+          "name": "菜单2子1",
+          "path": ""
+        },
+        {
+          "name": "菜单2子2",
+          "path": ""
+        }
+      ]
+    },
+    {
+      "name": "新闻",
+      "path": "",
+      "children": [
+        {
+          "name": "新闻子1",
+          "path": ""
+        },
+        {
+          "name": "新闻子2",
+          "path": ""
+        }
+      ]
+    },
+    {
+      "name": "研究",
+      "path": "",
+      "children": [
+        {
+          "name": "研究子1",
+          "path": ""
+        },
+        {
+          "name": "研究子2",
+          "path": ""
+        }
+      ]
+    },
+    {
+      "name": "文化",
+      "path": "",
+      "children": [
+        {
+          "name": "文化子1",
+          "path": ""
+        },
+        {
+          "name": "文化子2",
+          "path": ""
+        }
+      ]
+    },
+    {
+      "name": "联系我们",
+      "path": "/lxwm",
+      "children": [
+        {
+          "name": "联系我们子1",
+          "path": "",
+          "children": [
+            {
+              "name": "电话联系",
+              "path": "/lxwm/dhlx",
+              "children": [
+                {
+                  "name": "电话1",
+                  "path": "",
+                  "children": [
+                    {
+                      "name": "卧室电话",
+                      "path": "/lxwm/dhlx/wsdh"
+                    },
+                    {
+                      "name": "大厅电话",
+                      "path": "/lxwm/dhlx/dtdh"
+                    }
+                  ]
+                },
+                {
+                  "name": "电话2",
+                  "path": ""
+                }
+              ]
+            },
+            {
+              "name": "手机联系",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "name": "联系我们子2",
+          "path": ""
+        }
+      ]
+    }
+  ]
+}

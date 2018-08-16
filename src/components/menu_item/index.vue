@@ -5,26 +5,33 @@
 </template>
 
 <script>
+import eventHub from '@/utils/vm';
+
 export default {
   name: 'c-menu-item',
   props: {
     index: {
-      type: String,
+      type: [String, Number],
       required: true
     },
     path: String,
-    disabled: Boolean
+    /** 失效 */
+    disabled: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {}
   },
   methods: {
     onMenuItemHandle() {
-      console.log(this.$root);
       if (!this.disabled) {
+        console.log('选择了');
         // this.$emit('item-click', this.index, this.path);
         this.$emit('select', this.index, this.path);
-        this.$root.$emit('select', this.index, this.path);
+        eventHub.$emit('item-click', this.index, this.path);
+        // this.$root.$emit('select', this.index, this.path);
       }
     }
   }

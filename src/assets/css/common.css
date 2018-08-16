@@ -1,0 +1,7 @@
+/* 清除浮动 start */
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/* 清除浮动 end */

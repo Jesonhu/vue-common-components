@@ -1,0 +1,6 @@
+$browser-default-font-size: 50px;
+// @see cTools.Win.setRem()
+// @see https://www.w3cplus.com/preprocessor/sass-px-to-rem-with-mixin-and-function.html
+@function pxToRem($px) {
+  @return $px / $browser-default-font-size * 1rem;
+}
